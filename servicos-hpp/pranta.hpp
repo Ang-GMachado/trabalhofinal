@@ -1,13 +1,13 @@
-#ifndef MINE
-#define MINE
+#ifndef PRANTA
+#define PRANTA
 
 #include <string>
 #include "../core_hpp/servico.hpp"
 
-class Mine:public Servico
+class Pranta:public Servico
 {
     public:
-        Mine(float pag, int chanc, int time);
+        Pranta(float pag, int chanc, int time);
 
         int trabalhar(int time,int chanc) override;
 

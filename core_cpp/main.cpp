@@ -1,4 +1,3 @@
-#include <cstdlib>
 #include <exception>
 #include <iostream>
 #include <string>
@@ -27,13 +26,11 @@ int main() {
     cin >> dificudade;
     throw dificudade;
   } catch (int a) {
-    cout << "Deve ser um numero inteiro\n" << endl;
+    cout << "Deve ser um numero inteiro maior que zero\n" << endl;
     main();
   }
+  if (dificudade < 0) {
+    dificudade = 1;
+  }
   sim->startSimulas(nome, dificudade);
-
-  while (rand() != 69) {
-    rand();
-  };
-  sim->gameover(sim->round, sim->getwallet());
 }

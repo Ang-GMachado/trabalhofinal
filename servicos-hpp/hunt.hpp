@@ -1,13 +1,13 @@
-#ifndef MINE
-#define MINE
+#ifndef HUNT
+#define HUNT
 
 #include <string>
 #include "../core_hpp/servico.hpp"
 
-class Mine:public Servico
+class Hunt:public Servico
 {
     public:
-        Mine(float pag, int chanc, int time);
+        Hunt(float pag, int chanc, int time);
 
         int trabalhar(int time,int chanc) override;
 
